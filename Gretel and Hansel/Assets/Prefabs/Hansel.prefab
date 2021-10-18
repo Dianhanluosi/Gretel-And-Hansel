@@ -166,11 +166,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 2
   H: 
+  Horizontal: 0
   V: 
+  Vertical: 0
   A: 
+  AButton: 0
   B: 
-  speedValue: 250
+  BButton: 0
+  speedValue: 500
   isWalking: 0
-  speedMax: 1
-  speedMin: -1
+  speedMax: 0.4
+  speedMin: -0.4
   facingLeft: 1
+  canUseDoor: 0

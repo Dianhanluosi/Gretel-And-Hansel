@@ -119,14 +119,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 1
   H: 
+  Horizontal: 0
   V: 
+  Vertical: 0
   A: 
+  AButton: 0
   B: 
-  speedValue: 250
+  BButton: 0
+  speedValue: 500
   isWalking: 0
-  speedMax: 1
-  speedMin: -1
+  speedMax: 0.5
+  speedMin: -0.5
   facingLeft: 1
+  canUseDoor: 0
 --- !u!61 &5456087216701093008
 BoxCollider2D:
   m_ObjectHideFlags: 0

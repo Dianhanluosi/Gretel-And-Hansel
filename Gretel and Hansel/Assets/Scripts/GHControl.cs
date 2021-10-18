@@ -9,13 +9,22 @@ public class GHControl : MonoBehaviour
     public string playerNum;
 
     public string H;
+    public bool Horizontal = false;
 
     public string V;
+    public bool Vertical = false;
 
     public string A;
+    public bool AButton = false;
 
     public string B;
+    public bool BButton = false;
 
+
+    //bools to indicate whether or not controls are valid
+    public bool canMove = true;
+    public bool canControl = true;
+    public bool canInteract = true;
 
     //referencing rigidbody
     Rigidbody2D rb;
@@ -34,6 +43,17 @@ public class GHControl : MonoBehaviour
 
     //determine which direction the player is facing
     public bool facingLeft = true;
+
+
+    //variables for teleportation
+    public float teleCD = 0.5f;
+    public Vector2 NextDoorPos;
+
+
+    //bools to determine if can interact with an object
+    public bool canUseDoor = false;
+    public bool doorTeleporting = false;
+
 
     private void Awake()
     {
@@ -57,14 +77,50 @@ public class GHControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        InputIndicator();
+
         Flip();
 
-        Movement();
+        if (canMove)
+        {
+            Movement();
+        }
 
-        animControl();
+        AnimControl();
 
+        teleCD -= Time.deltaTime;
+        Teleporter();
+        
     }
 
+    void InputIndicator()
+    {
+
+
+        //A button
+        if (Input.GetButtonDown(A))
+        {
+            AButton = true;
+        }
+        else
+        {
+            AButton = false;
+        }
+
+
+        //B button
+        if (Input.GetButtonDown(B))
+        {
+            BButton = true;
+        }
+        else
+        {
+            BButton = false;
+        }
+
+    }
 
 
     void Flip()
@@ -119,7 +175,7 @@ public class GHControl : MonoBehaviour
 
     }
 
-    void animControl()
+    void AnimControl()
     {
         anim.SetBool("isWalking", isWalking);
 
@@ -134,6 +190,49 @@ public class GHControl : MonoBehaviour
 
     }
 
-   
+
+    void Teleporter()
+    {
+
+        //door teleportation
+        if (canUseDoor && AButton)
+        {
+            teleCD = 1f;
+            doorTeleporting = true;
+            canMove = false; //cannot move when blacking out
+        }
+        if (doorTeleporting && teleCD < 0)
+        {
+            gameObject.transform.position = NextDoorPos;
+        }
+
+
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       if (collision.gameObject.CompareTag("Door"))
+        {
+            canUseDoor = true;
+
+           
+
+            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
+
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("Door"))
+        {
+            canUseDoor = false;
+            doorTeleporting = false;
+            canMove = true;
+        }
+    }
 
 }
