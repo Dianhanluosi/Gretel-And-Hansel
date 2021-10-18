@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class GHControl : MonoBehaviour
 {
@@ -55,6 +56,13 @@ public class GHControl : MonoBehaviour
     public bool doorTeleporting = false;
 
 
+
+    //UI control
+    //black out
+    public BlackoutControl BC;
+    public GameObject vCam;
+
+
     private void Awake()
     {
         H = "Horizontal" + playerNum ;
@@ -90,8 +98,8 @@ public class GHControl : MonoBehaviour
 
         AnimControl();
 
-        //teleCD -= Time.deltaTime;
-        //Teleporter();
+        teleCD -= Time.deltaTime;
+        Teleporter();
         
     }
 
@@ -200,10 +208,14 @@ public class GHControl : MonoBehaviour
             teleCD = 1f;
             doorTeleporting = true;
             canMove = false; //cannot move when blacking out
+            BC.black = true; //start black out
+            vCam.SetActive(false);//turn off vcam
         }
         if (doorTeleporting && teleCD < 0)
         {
             gameObject.transform.position = NextDoorPos;
+            BC.black = false;//turn off black out
+            vCam.SetActive(true); // turn vcam back on
         }
 
 
@@ -212,17 +224,20 @@ public class GHControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.gameObject.CompareTag("Door"))
-        {
+       if (collision.gameObject.CompareTag("Door")) 
+        { 
+        
             canUseDoor = true;
 
            
 
-            //NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
+            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
 
         }
 
     }
+
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {

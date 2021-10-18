@@ -16,20 +16,18 @@ public class ControllerManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("A1"))
+
+
+        for (int i = 1; i < 10; i++)
         {
-            print("1");
+            if (Input.GetKeyDown("joystick "+ i + " button 0"))
+            {
+                print(i);
+            }
         }
 
-        if (Input.GetButton("A2"))
-        {
-            print("2");
-        }
 
-        if (Input.GetButton("A3"))
-        {
-            print("3");
-        }
+       
 
     }
 }
