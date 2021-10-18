@@ -90,8 +90,8 @@ public class GHControl : MonoBehaviour
 
         AnimControl();
 
-        teleCD -= Time.deltaTime;
-        Teleporter();
+        //teleCD -= Time.deltaTime;
+        //Teleporter();
         
     }
 
@@ -218,7 +218,7 @@ public class GHControl : MonoBehaviour
 
            
 
-            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
+            //NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
 
         }
 
