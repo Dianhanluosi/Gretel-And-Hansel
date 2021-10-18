@@ -76,7 +76,7 @@ public class RoomBlackOutManager : MonoBehaviour
 
         if (!GretelSee)
         {
-
+            
         }
 
         if (!HanselSee)
