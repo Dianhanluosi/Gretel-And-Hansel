@@ -19,6 +19,11 @@ public class WitchControl : MonoBehaviour
     public bool BButton = false;
 
 
+    //bools to indicate whether or not controls are valid
+    public bool canMove = true;
+    public bool canControl = true;
+    public bool canInteract = true;
+
     //referencing rigidbody
     Rigidbody2D rb;
 
@@ -38,7 +43,23 @@ public class WitchControl : MonoBehaviour
     public bool facingLeft = true;
 
 
+    //variables for teleportation
+    public float teleCD = 0.5f;
+    public Vector2 NextDoorPos;
+
+
+
     //bools to determine if can interact with an object
+    public bool canUseDoor = false;
+    public bool doorTeleporting = false;
+
+
+
+    //UI control
+    //black out
+    public BlackoutControl BC;
+    public GameObject vCam;
+
 
     private void Awake()
     {
@@ -62,14 +83,50 @@ public class WitchControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        InputIndicator();
+
         Flip();
 
-        Movement();
+        if (canMove)
+        {
+            Movement();
+        }
 
-        animControl();
+        AnimControl();
+
+        teleCD -= Time.deltaTime;
+        Teleporter();
 
     }
 
+    void InputIndicator()
+    {
+
+
+        //A button
+        if (Input.GetButtonDown(A))
+        {
+            AButton = true;
+        }
+        else
+        {
+            AButton = false;
+        }
+
+
+        //B button
+        if (Input.GetButtonDown(B))
+        {
+            BButton = true;
+        }
+        else
+        {
+            BButton = false;
+        }
+
+    }
 
 
     void Flip()
@@ -124,7 +181,7 @@ public class WitchControl : MonoBehaviour
 
     }
 
-    void animControl()
+    void AnimControl()
     {
         anim.SetBool("isWalking", isWalking);
 
@@ -140,11 +197,68 @@ public class WitchControl : MonoBehaviour
     }
 
 
+    void Teleporter()
+    {
+
+        //door teleportation
+        if (canUseDoor && AButton)
+        {
+            teleCD = 1f;
+            doorTeleporting = true;
+            canMove = false; //cannot move when blacking out
+            BC.black = true; //start black out
+            vCam.SetActive(false);//turn off vcam
+        }
+        if (doorTeleporting && teleCD < 0)
+        {
+            gameObject.transform.position = NextDoorPos;
+            BC.black = false;//turn off black out
+            vCam.SetActive(true); // turn vcam back on
+        }
+
+
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Door"))
         {
 
+            canUseDoor = true;
+
+
+
+            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Doors>().nextDoorPos.x + collision.gameObject.GetComponent<Doors>().offSet.x, gameObject.transform.position.y);
+
+        }
+
+        if (collision.gameObject.CompareTag("Stairs"))
+        {
+
+            canUseDoor = true;
+
+
+
+            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Stairs>().thatX, collision.gameObject.GetComponent<Stairs>().thatY);
+
+        }
+
+
+
+    }
+
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.CompareTag("Door") || collision.gameObject.CompareTag("Stairs"))
+        {
+            canUseDoor = false;
+            doorTeleporting = false;
+            canMove = true;
         }
     }
+
 }

@@ -49,6 +49,7 @@ public class GHControl : MonoBehaviour
     //variables for teleportation
     public float teleCD = 0.5f;
     public Vector2 NextDoorPos;
+    
 
 
     //bools to determine if can interact with an object
@@ -224,7 +225,7 @@ public class GHControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.gameObject.CompareTag("Door")) 
+       if (collision.gameObject.CompareTag("Door"))
         { 
         
             canUseDoor = true;
@@ -235,6 +236,19 @@ public class GHControl : MonoBehaviour
 
         }
 
+        if (collision.gameObject.CompareTag("Stairs"))
+        {
+
+            canUseDoor = true;
+
+
+
+            NextDoorPos = new Vector2(collision.gameObject.GetComponent<Stairs>().thatX, collision.gameObject.GetComponent<Stairs>().thatY);
+
+        }
+
+
+
     }
 
 
@@ -242,7 +256,7 @@ public class GHControl : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Door"))
+        if (collision.gameObject.CompareTag("Door") || collision.gameObject.CompareTag("Stairs"))
         {
             canUseDoor = false;
             doorTeleporting = false;
