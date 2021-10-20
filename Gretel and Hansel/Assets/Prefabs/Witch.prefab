@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -8819075263650075153, guid: 44517141dfc345a42b90671959698c0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,8 +131,8 @@ MonoBehaviour:
   canInteract: 1
   speedValue: 800
   isWalking: 0
-  speedMax: 0.6
-  speedMin: -0.6
+  speedMax: 0.8
+  speedMin: -0.8
   facingLeft: 1
   teleCD: 0.5
   NextDoorPos: {x: 0, y: 0}

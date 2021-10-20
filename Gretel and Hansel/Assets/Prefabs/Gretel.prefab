@@ -131,8 +131,8 @@ MonoBehaviour:
   canInteract: 1
   speedValue: 500
   isWalking: 0
-  speedMax: 0.7
-  speedMin: -0.7
+  speedMax: 1
+  speedMin: -1
   facingLeft: 1
   teleCD: 0.5
   NextDoorPos: {x: 0, y: 0}
