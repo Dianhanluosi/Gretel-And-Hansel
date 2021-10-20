@@ -3480,7 +3480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 69.19502, y: 0}
+  m_AnchoredPosition: {x: 69.19501, y: 0}
   m_SizeDelta: {x: 345.40994, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &752780764
@@ -4929,7 +4929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310013726}
   m_LocalRotation: {x: 0.02995959, y: 1.1092263e-16, z: 2.8652877e-19, w: 0.9995511}
-  m_LocalPosition: {x: 0, y: 1.1500001, z: 0}
+  m_LocalPosition: {x: -0.119999886, y: 1.1600003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1708781562}
@@ -5853,7 +5853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483619222}
   m_LocalRotation: {x: 0.02995959, y: 1.1092263e-16, z: 2.8652877e-19, w: 0.9995511}
-  m_LocalPosition: {x: 0, y: 1.1500001, z: 0}
+  m_LocalPosition: {x: -0.119999886, y: 1.1600003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 137934385}
@@ -9305,11 +9305,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325696, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325696, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325696, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9355,6 +9355,18 @@ PrefabInstance:
       propertyPath: vCam
       value: 
       objectReference: {fileID: 1483619222}
+    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325711, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: m_Name
       value: Witch
