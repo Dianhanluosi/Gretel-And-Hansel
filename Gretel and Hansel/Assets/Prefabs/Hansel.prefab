@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -6904250173290874173, guid: 5f1b3b80275edcc45ba82a23f720b2c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -173,9 +173,17 @@ MonoBehaviour:
   AButton: 0
   B: 
   BButton: 0
+  canMove: 1
+  canControl: 1
+  canInteract: 1
   speedValue: 500
   isWalking: 0
-  speedMax: 0.4
-  speedMin: -0.4
+  speedMax: 0.7
+  speedMin: -0.7
   facingLeft: 1
+  teleCD: 0.5
+  NextDoorPos: {x: 0, y: 0}
   canUseDoor: 0
+  doorTeleporting: 0
+  BC: {fileID: 0}
+  vCam: {fileID: 0}
