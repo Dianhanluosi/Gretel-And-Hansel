@@ -18,6 +18,16 @@ public class WitchControl : MonoBehaviour
     public string B;
     public bool BButton = false;
 
+    public string LT;
+    public bool LTrig = false;
+    public string LB;
+    public bool LBButton = false;
+
+    public string RT;
+    public bool RTrig = false;
+    public string RB;
+    public bool RBButton = false;
+
 
     //bools to indicate whether or not controls are valid
     public bool canMove = true;
@@ -67,6 +77,10 @@ public class WitchControl : MonoBehaviour
         V = "Vertical" + playerNum;
         A = "A" + playerNum;
         B = "B" + playerNum;
+        LT = "LT" + playerNum;
+        RT = "RT" + playerNum;
+        LB = "LB" + playerNum;
+        RB = "RB" + playerNum;
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -124,6 +138,50 @@ public class WitchControl : MonoBehaviour
         else
         {
             BButton = false;
+        }
+
+
+        //LT
+        if (Input.GetAxis(LT) > 0)
+        {
+            LTrig = true;
+        }
+        else
+        {
+            LTrig = false;
+        }
+
+
+        //RT
+        if (Input.GetAxis(RT) > 0)
+        {
+            RTrig = true;
+        }
+        else
+        {
+            RTrig = false;
+        }
+
+
+        //LB
+        if (Input.GetButtonDown(LB))
+        {
+            LBButton = true;
+        }
+        else
+        {
+            LBButton = false;
+        }
+
+
+        //RB
+        if (Input.GetButtonDown(RB))
+        {
+            RBButton = true;
+        }
+        else
+        {
+            RBButton = false;
         }
 
     }
