@@ -40,4 +40,6 @@ public class TeleCam : MonoBehaviour
             Cam.SetActive(false);
         }
     }
+
+    
 }
