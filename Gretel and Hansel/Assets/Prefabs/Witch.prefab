@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 12
   m_Sprite: {fileID: -8819075263650075153, guid: 44517141dfc345a42b90671959698c0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126,6 +126,14 @@ MonoBehaviour:
   AButton: 0
   B: 
   BButton: 0
+  LT: 
+  LTrig: 0
+  LB: 
+  LBButton: 0
+  RT: 
+  RTrig: 0
+  RB: 
+  RBButton: 0
   canMove: 1
   canControl: 1
   canInteract: 1
@@ -138,8 +146,17 @@ MonoBehaviour:
   NextDoorPos: {x: 0, y: 0}
   canUseDoor: 0
   doorTeleporting: 0
+  tele: 0
+  canUseTeleporter: 0
+  teleArray: {fileID: 0}
+  camnum: 0
+  curretnCamNum: 0
+  camMax: 4
+  teleCamOn: 0
+  TelePos: {x: 0, y: 0}
   BC: {fileID: 0}
   vCam: {fileID: 0}
+  Cam: {fileID: 0}
 --- !u!61 &1739893321104325701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,4 +203,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

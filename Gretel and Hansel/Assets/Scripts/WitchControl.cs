@@ -319,7 +319,7 @@ public class WitchControl : MonoBehaviour
             teleCamOn = true;
             canMove = false;
         }
-        if (!canUseTeleporter)
+        if (!canUseTeleporter && !BC.black && !tele && !doorTeleporting)
         {
             teleCamOn = false;
             canMove = true;

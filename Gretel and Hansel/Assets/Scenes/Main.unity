@@ -3969,7 +3969,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4011,12 +4011,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisY
+      value: -4.532217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisNum
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422047, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_Name
       value: EyeTele (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+--- !u!114 &397966660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+  m_PrefabInstance: {fileID: 397966659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8cb57e2f7a5784583d2e05f449cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &404113484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,8 +5886,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleporters:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1781177507}
+  - {fileID: 2953157672741297643}
+  - {fileID: 397966660}
+  - {fileID: 1000585255}
+  - {fileID: 812846921}
 --- !u!4 &663998823
 Transform:
   m_ObjectHideFlags: 0
@@ -5881,7 +5903,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692106165
 GameObject:
@@ -7530,7 +7552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7572,12 +7594,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisY
+      value: 1.287784
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisNum
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422047, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_Name
       value: EyeTele (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+--- !u!114 &812846921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+  m_PrefabInstance: {fileID: 812846920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8cb57e2f7a5784583d2e05f449cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &829417301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1754017805372261125, guid: 5970e982e0925e341a68d1bcfe43fdd2, type: 3}
@@ -8932,7 +8973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8974,12 +9015,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisY
+      value: 1.287784
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisNum
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422047, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_Name
       value: EyeTele (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+--- !u!114 &1000585255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+  m_PrefabInstance: {fileID: 1000585254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8cb57e2f7a5784583d2e05f449cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1002192897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16001,6 +16061,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c0d161de6c0d8429dc8418ea8ef686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1781177506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.911
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisY
+      value: -13.08222
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422047, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: m_Name
+      value: EyeTele (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+--- !u!114 &1781177507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+  m_PrefabInstance: {fileID: 1781177506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8cb57e2f7a5784583d2e05f449cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1782367975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20664,18 +20796,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325697, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325697, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325698, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: BC
       value: 
@@ -20685,33 +20805,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1310013726}
     - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: tele
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: vCam
       value: 
       objectReference: {fileID: 1483619222}
     - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: camMax
-      value: 1
+      propertyPath: canMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
+      propertyPath: speedMax
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
+      propertyPath: speedMin
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325699, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: teleArray
       value: 
       objectReference: {fileID: 663998822}
-    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739893321104325701, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.55
-      objectReference: {fileID: 0}
     - target: {fileID: 1739893321104325711, guid: 6f6f7f7880e31094383cdada6573f7a8, type: 3}
       propertyPath: m_Name
       value: Witch
@@ -20836,7 +20948,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422032, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20878,12 +20990,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisY
+      value: -4.532217
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+      propertyPath: thisNum
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2953157672088422047, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
       propertyPath: m_Name
       value: EyeTele
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+--- !u!114 &2953157672741297643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2953157672088422044, guid: 0cf0cf4117ceeb34aafa4861e04a3b27, type: 3}
+  m_PrefabInstance: {fileID: 2953157672741297642}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8cb57e2f7a5784583d2e05f449cf6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3099478464589991309
 PrefabInstance:
   m_ObjectHideFlags: 0
