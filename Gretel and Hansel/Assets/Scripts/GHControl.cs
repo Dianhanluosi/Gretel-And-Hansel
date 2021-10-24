@@ -49,8 +49,8 @@ public class GHControl : MonoBehaviour
     //variables for teleportation
     public float teleCD = 0.5f;
     public Vector2 NextDoorPos;
-    
 
+    public bool tele = false;
 
     //bools to determine if can interact with an object
     public bool canUseDoor = false;
@@ -202,6 +202,9 @@ public class GHControl : MonoBehaviour
 
     void Teleporter()
     {
+        anim.SetBool("Teleporter", tele);
+
+
 
         //door teleportation
         if (canUseDoor && AButton)
@@ -211,12 +214,14 @@ public class GHControl : MonoBehaviour
             canMove = false; //cannot move when blacking out
             BC.black = true; //start black out
             vCam.SetActive(false);//turn off vcam
+            tele = true;
         }
         if (doorTeleporting && teleCD < 0)
         {
             gameObject.transform.position = NextDoorPos;
             BC.black = false;//turn off black out
             vCam.SetActive(true); // turn vcam back on
+            tele = false;
         }
 
 

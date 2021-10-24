@@ -63,6 +63,10 @@ public class WitchControl : MonoBehaviour
     public bool canUseDoor = false;
     public bool doorTeleporting = false;
 
+
+    public bool tele = false;
+
+
     //teleportation / venting
     public bool canUseTeleporter = false;
     public TeleManage teleArray;
@@ -286,6 +290,8 @@ public class WitchControl : MonoBehaviour
 
     void Teleporter()
     {
+        anim.SetBool("Teleport", tele);
+
 
         //door teleportation
         if (canUseDoor && AButton)
@@ -295,13 +301,16 @@ public class WitchControl : MonoBehaviour
             canMove = false; //cannot move when blacking out
             BC.black = true; //start black out
             vCam.SetActive(false);//turn off vcam
+            tele = true;
         }
         if (doorTeleporting && teleCD < 0)
         {
             gameObject.transform.position = NextDoorPos;
             BC.black = false;//turn off black out
             vCam.SetActive(true); // turn vcam back on
+            tele = false;
         }
+        
 
 
         //teleporter teleportation
@@ -363,18 +372,24 @@ public class WitchControl : MonoBehaviour
 
         
         
-
+        //teleportation
         if (curretnCamNum!=camnum && teleCamOn && AButton)
         {
             gameObject.transform.position = TelePos;
             teleCamOn = false;
             curretnCamNum = camnum;
+            canMove = true;
         }
+        
         if (teleCamOn && BButton)
         {
             teleCamOn = false;
             canMove = true;
         }
+
+
+
+
     }
 
 

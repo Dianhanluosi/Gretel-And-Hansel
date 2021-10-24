@@ -14,15 +14,23 @@ public class TeleCam : MonoBehaviour
 
     public int thisNum;
 
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         thisX = gameObject.GetComponent<Transform>().position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+        anim.SetBool("Play", CamOn);
+
+
         if (CamOn)
         {
             Cam.SetActive(true);
