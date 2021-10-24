@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 60713a642719d2d4cad1ab27d283382b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7986931813288863872
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_0
+  - first:
+      213: 5620161228601259905
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_1
+  - first:
+      213: 2001831099190205151
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_2
+  - first:
+      213: -1489703278750013390
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_3
+  - first:
+      213: -1381523478281732100
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_4
+  - first:
+      213: -3076124427678637532
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_5
+  - first:
+      213: 5888600497424835602
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_6
+  - first:
+      213: -4097202378899445708
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_7
+  - first:
+      213: -2576470295871850728
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_8
+  - first:
+      213: 6584374544584303772
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_9
+  - first:
+      213: -4254216554052238428
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_10
+  - first:
+      213: -8497667844433854557
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_11
+  - first:
+      213: 8442865456433389912
+    second: gretel-IdleWalkSpriteshee(handsstickingout)t_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +71,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,7 +80,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +114,306 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 22
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08796a715d7b82190800000000000000
+      internalID: -7986931813288863872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 22
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187733b4cd2defd40800000000000000
+      internalID: 5620161228601259905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 6
+        width: 23
+        height: 49
+      alignment: 9
+      pivot: {x: 0.48104858, y: 0.4436621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdadf8f47cee7cb10800000000000000
+      internalID: 2001831099190205151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 6
+        width: 22
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238ee51c2c2835be0800000000000000
+      internalID: -1489703278750013390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 6
+        width: 23
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffb72457b7d3dce0800000000000000
+      internalID: -1381523478281732100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 6
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422205b81296f45d0800000000000000
+      internalID: -3076124427678637532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 6
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214223904f288b150800000000000000
+      internalID: 5888600497424835602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 6
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43820d0f420d327c0800000000000000
+      internalID: -4097202378899445708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 6
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8177638aae98e3cd0800000000000000
+      internalID: -2576470295871850728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 6
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94621643c5606b50800000000000000
+      internalID: 6584374544584303772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 6
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3412a759cf5f4c0800000000000000
+      internalID: -4254216554052238428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_11
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 6
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afb2493e18321a80800000000000000
+      internalID: -8497667844433854557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gretel-IdleWalkSpriteshee(handsstickingout)t_12
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 6
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851e02186651b2570800000000000000
+      internalID: 8442865456433389912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
