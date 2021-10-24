@@ -9,6 +9,7 @@ TagManager:
   - Witch
   - Door
   - Stairs
+  - Tele
   layers:
   - Default
   - TransparentFX

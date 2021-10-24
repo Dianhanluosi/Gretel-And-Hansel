@@ -63,12 +63,21 @@ public class WitchControl : MonoBehaviour
     public bool canUseDoor = false;
     public bool doorTeleporting = false;
 
+    //teleportation / venting
+    public bool canUseTeleporter = false;
+    public TeleManage teleArray;
+    public int camnum = 0;
+    public int curretnCamNum = 0;
+    public int camMax;
+    public bool teleCamOn = false;
+    public Vector2 TelePos;
 
 
     //UI control
     //black out
     public BlackoutControl BC;
     public GameObject vCam;
+    public GameObject Cam;
 
 
     private void Awake()
@@ -97,6 +106,26 @@ public class WitchControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+       /* if (RBButton)
+        {
+            camnum += 1;
+        }
+        if (LBButton)
+        {
+            camnum -= 1;
+        }
+        if (camnum > camMax)
+        {
+            camnum = 0;
+        }
+        if (camnum < 0)
+        {
+            camnum = camMax;
+        }
+        print(camnum);*/
+
 
 
         InputIndicator();
@@ -275,6 +304,77 @@ public class WitchControl : MonoBehaviour
         }
 
 
+        //teleporter teleportation
+        if (canUseTeleporter && AButton)
+        {
+            teleCamOn = true;
+            canMove = false;
+        }
+        if (!canUseTeleporter)
+        {
+            teleCamOn = false;
+            canMove = true;
+        }
+
+        if (camnum > camMax)
+        {
+            camnum = 0;
+        }
+        if (camnum < 0)
+        {
+            camnum = camMax;
+        }
+
+        if (teleCamOn)
+        {
+            if (RBButton)
+            {
+                camnum += 1;
+            }
+            if (LBButton)
+            {
+                camnum -= 1;
+            }
+            TelePos = new Vector2(teleArray.teleporters[camnum].thisX, teleArray.teleporters[camnum].thisY);
+
+            for (int i = 0; i < teleArray.teleporters.Length; i++)
+            {
+                if (i == camnum)
+                {
+                    teleArray.teleporters[i].CamOn = true;
+                }
+                else
+                {
+                    teleArray.teleporters[i].CamOn = false;
+                }
+            }
+            Cam.SetActive(false);
+
+        }
+        else
+        {
+            Cam.SetActive(true);
+            for (int i = 0; i < teleArray.teleporters.Length; i++)
+            {
+                teleArray.teleporters[i].CamOn = false;
+            }
+        }
+
+
+        
+        
+
+        if (curretnCamNum!=camnum && teleCamOn && AButton)
+        {
+            gameObject.transform.position = TelePos;
+            teleCamOn = false;
+            curretnCamNum = camnum;
+        }
+        if (teleCamOn && BButton)
+        {
+            teleCamOn = false;
+            canMove = true;
+        }
     }
 
 
@@ -302,6 +402,14 @@ public class WitchControl : MonoBehaviour
 
         }
 
+        if (collision.gameObject.CompareTag("Tele"))
+        {
+            canUseTeleporter = true;
+            camnum = collision.gameObject.GetComponent<TeleCam>().thisNum;
+            curretnCamNum = collision.gameObject.GetComponent<TeleCam>().thisNum;
+
+        }
+
 
 
     }
@@ -316,6 +424,12 @@ public class WitchControl : MonoBehaviour
             canUseDoor = false;
             doorTeleporting = false;
             canMove = true;
+        }
+
+        if (collision.gameObject.CompareTag("Tele"))
+        {
+            canUseTeleporter = false;
+
         }
     }
 
