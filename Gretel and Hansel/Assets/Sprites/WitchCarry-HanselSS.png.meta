@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 986bc7ae624a04849862a9cceecd13b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -517782910243311225
+    second: WitchCarry-HanselSS_0
+  - first:
+      213: 3365743586353292701
+    second: WitchCarry-HanselSS_1
+  - first:
+      213: -8401797504512071657
+    second: WitchCarry-HanselSS_2
+  - first:
+      213: 1812375535067875458
+    second: WitchCarry-HanselSS_3
+  - first:
+      213: 680790318433960825
+    second: WitchCarry-HanselSS_4
+  - first:
+      213: 3572501621303687326
+    second: WitchCarry-HanselSS_5
+  - first:
+      213: -927696874651558134
+    second: WitchCarry-HanselSS_6
+  - first:
+      213: 6633348131676310496
+    second: WitchCarry-HanselSS_7
+  - first:
+      213: 4017815451700140434
+    second: WitchCarry-HanselSS_8
+  - first:
+      213: -2026708974912344331
+    second: WitchCarry-HanselSS_9
+  - first:
+      213: 7191055506353175019
+    second: WitchCarry-HanselSS_10
+  - first:
+      213: 1685428121331737707
+    second: WitchCarry-HanselSS_11
+  - first:
+      213: -8129941600577374798
+    second: WitchCarry-HanselSS_12
+  - first:
+      213: -6090949277992872155
+    second: WitchCarry-HanselSS_13
+  - first:
+      213: 2936558820943234581
+    second: WitchCarry-HanselSS_14
+  - first:
+      213: 9180916415230302675
+    second: WitchCarry-HanselSS_15
+  - first:
+      213: 7122373925672646895
+    second: WitchCarry-HanselSS_16
+  - first:
+      213: -4709146511636299439
+    second: WitchCarry-HanselSS_17
+  - first:
+      213: -7770536781211288854
+    second: WitchCarry-HanselSS_18
+  - first:
+      213: 6236754609416256258
+    second: WitchCarry-HanselSS_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 36
+        height: 66
+      alignment: 9
+      pivot: {x: 0.8145168, y: 0.021453561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781fd2cbf2770d8f0800000000000000
+      internalID: -517782910243311225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.8707986, y: 0.036502354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9523a595f585be20800000000000000
+      internalID: 3365743586353292701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 36
+        height: 66
+      alignment: 9
+      pivot: {x: 0.83106995, y: 0.0124243805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7186bcc2fa1d66b80800000000000000
+      internalID: -8401797504512071657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.8707984, y: 0.0033953588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288445f52f9d62910800000000000000
+      internalID: 1812375535067875458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1
+        width: 36
+        height: 66
+      alignment: 9
+      pivot: {x: 0.83106995, y: 0.0033951998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97308c80037a27900800000000000000
+      internalID: 680790318433960825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.88404137, y: 0.036502354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e983051fb43149130800000000000000
+      internalID: 3572501621303687326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1
+        width: 37
+        height: 68
+      alignment: 9
+      pivot: {x: 0.8221221, y: 0.009237419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f572f8b982023f0800000000000000
+      internalID: -927696874651558134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_7
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.8443129, y: 0.036502354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb41141bf26e0c50800000000000000
+      internalID: 6633348131676310496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1
+        width: 71
+        height: 64
+      alignment: 9
+      pivot: {x: 0.91127294, y: 0.01581024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29999a3bdd522c730800000000000000
+      internalID: 4017815451700140434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_9
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1
+        width: 45
+        height: 18
+      alignment: 9
+      pivot: {x: 0.88404137, y: 0.06960935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fee04fdceeafd3e0800000000000000
+      internalID: -2026708974912344331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_10
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1
+        width: 83
+        height: 60
+      alignment: 9
+      pivot: {x: 0.92360973, y: 0.0033952435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be93c4812e2cbc360800000000000000
+      internalID: 7191055506353175019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_11
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1
+        width: 82
+        height: 60
+      alignment: 9
+      pivot: {x: 0.9215088, y: 0.013327342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64ae6252f7d36710800000000000000
+      internalID: 1685428121331737707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1
+        width: 81
+        height: 65
+      alignment: 9
+      pivot: {x: 0.9340692, y: -0.004245057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b53ae44035ac2f80800000000000000
+      internalID: -8129941600577374798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_13
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1
+        width: 64
+        height: 65
+      alignment: 9
+      pivot: {x: 0.90038776, y: 0.0049230354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527105427e9987ba0800000000000000
+      internalID: -6090949277992872155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1
+        width: 74
+        height: 68
+      alignment: 9
+      pivot: {x: 0.92681223, y: 0.009237419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5168c5860b0c0c820800000000000000
+      internalID: 2936558820943234581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_15
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2
+        width: 40
+        height: 71
+      alignment: 9
+      pivot: {x: 0.8575546, y: 0.013187285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9da5a46da296f70800000000000000
+      internalID: 9180916415230302675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_16
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1
+        width: 62
+        height: 70
+      alignment: 9
+      pivot: {x: 0.90369046, y: 0.014746056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8f8357951c7d260800000000000000
+      internalID: 7122373925672646895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_17
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1
+        width: 50
+        height: 71
+      alignment: 9
+      pivot: {x: 0.89331055, y: 0.004794141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15106a2a230c5aeb0800000000000000
+      internalID: -4709146511636299439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_18
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1
+        width: 51
+        height: 71
+      alignment: 9
+      pivot: {x: 0.8855986, y: 0.004794141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea3bc1b7f1892490800000000000000
+      internalID: -7770536781211288854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WitchCarry-HanselSS_19
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1
+        width: 48
+        height: 70
+      alignment: 9
+      pivot: {x: 0.87245435, y: -0.010793624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b398506476d8650800000000000000
+      internalID: 6236754609416256258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
