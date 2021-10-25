@@ -21,6 +21,7 @@ public class LampOn : MonoBehaviour
     public GameObject stairs1;
     public GameObject stairs2;
 
+
     public Collider2D coll;
 
     // Start is called before the first frame update
