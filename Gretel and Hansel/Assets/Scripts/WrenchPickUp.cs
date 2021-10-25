@@ -26,6 +26,24 @@ public class WrenchPickUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Gretel.haveCrowBar)
+        {
+            A.AUIG.SetActive(false);
+        }
+        else
+        {
+
+        }
+
+        if (Hansel.haveCrowBar)
+        {
+            A.AUIH.SetActive(false);
+        }
+        else
+        {
+
+        }
+
         if (A.AUIG.activeSelf || A.AUIH.activeSelf)
         {
             canPickUp = true;
