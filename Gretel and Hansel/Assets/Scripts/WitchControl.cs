@@ -104,8 +104,18 @@ public class WitchControl : MonoBehaviour
     public Fire oven;
 
 
+
+    public Renderer rend;
+    public Collider2D coll;
+
+
     public GameObject AUI;
 
+
+    public bool Win;
+    public bool Lose;
+    public GameObject LoseScreen;
+    public GameObject WinScreen;
 
     private void Awake()
     {
@@ -121,6 +131,10 @@ public class WitchControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
+
+        rend = GetComponent<Renderer>();
+
+        coll = GetComponent<Collider2D>();
     }
 
 
@@ -171,6 +185,7 @@ public class WitchControl : MonoBehaviour
 
         snatching();
 
+        End();
 
     }
 
@@ -473,6 +488,29 @@ public class WitchControl : MonoBehaviour
         anim.SetBool("Gretel", !isntCarryingGretel);
         anim.SetBool("Hansel", !isntCarryingHansel);
         
+
+    }
+
+    void End()
+    {
+        if (Gretel.escaped || Hansel.escaped)
+        {
+            Lose = true;
+            LoseScreen.SetActive(true);
+        }
+        if (Gretel.caught && Hansel.caught)
+        {
+            Win = true;
+            WinScreen.SetActive(true);
+        }
+
+        if (Lose || Win)
+        {
+            rend.enabled = false;
+            coll.enabled = false;
+            anim.enabled = false;
+            rb.isKinematic = true;
+        }
 
     }
 

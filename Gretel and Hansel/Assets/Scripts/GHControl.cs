@@ -73,6 +73,10 @@ public class GHControl : MonoBehaviour
     public bool dead = false;
     public GameObject deadscreen;
 
+
+    public bool escaped = false;
+
+
     public Renderer rend;
     public Collider2D coll;
 
@@ -83,6 +87,17 @@ public class GHControl : MonoBehaviour
     //WitchUI
 
     public GameObject RTUI;
+
+
+
+    public bool haveKey;
+    public bool haveCrowBar;
+    public bool haveWrench;
+
+
+
+
+
 
     private void Awake()
     {
@@ -129,7 +144,9 @@ public class GHControl : MonoBehaviour
         }
 
         captured();
-        
+
+        Gone();
+
     }
 
     void InputIndicator()
@@ -271,7 +288,14 @@ public class GHControl : MonoBehaviour
         }
 
         
-        if (dead)
+        
+        
+
+    }
+
+    void Gone()
+    {
+        if (escaped)
         {
             canMove = false;
             canControl = false;
@@ -281,10 +305,7 @@ public class GHControl : MonoBehaviour
             rb.isKinematic = true;
             deadscreen.SetActive(true);
         }
-        
-
     }
-
 
 
     private void OnTriggerEnter2D(Collider2D collision)

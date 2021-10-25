@@ -15,6 +15,13 @@ public class Fire : MonoBehaviour
 
     public GameObject A;
 
+    public int death = 0;
+
+
+    public GameObject stairs1;
+    public GameObject starits2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +38,14 @@ public class Fire : MonoBehaviour
         //burning
         if (!witch.isntCarryingGretel && canburn && witch.AButton)
         {
+            death += 1;
             burn = true;
             witch.gretelBurned = true;
         }
 
         if (!witch.isntCarryingHansel && canburn && witch.AButton)
         {
+            death += 1;
             burn = true;
             witch.hanselBurned = true;
         }
@@ -53,6 +62,18 @@ public class Fire : MonoBehaviour
 
 
         anim.SetBool("Burned", burn);
+
+
+        if (death  > 0)
+        {
+            stairs1.SetActive(true);
+            starits2.SetActive(true);
+        }
+        else
+        {
+            stairs1.SetActive(false);
+            starits2.SetActive(false) ;
+        }
 
     }
 
