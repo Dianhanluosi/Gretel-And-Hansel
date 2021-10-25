@@ -39,7 +39,7 @@ public class Gate : MonoBehaviour
             buttons.enabled = false;
         }
 
-        if (canUse && Hansel.haveKey && Gretel.AButton)
+        if (canUse && Gretel.haveKey && Gretel.AButton)
         {
             Gretel.escaped = true;
         }

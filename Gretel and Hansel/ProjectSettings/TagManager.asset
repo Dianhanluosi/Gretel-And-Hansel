@@ -12,6 +12,7 @@ TagManager:
   - Tele
   - Catcher
   - Fire
+  - song
   layers:
   - Default
   - TransparentFX
