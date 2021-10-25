@@ -76,6 +76,8 @@ public class GHControl : MonoBehaviour
 
     public bool escaped = false;
 
+    public bool finished = false;
+
 
     public Renderer rend;
     public Collider2D coll;
@@ -146,6 +148,11 @@ public class GHControl : MonoBehaviour
         captured();
 
         Gone();
+
+        if (escaped || caught)
+        {
+            finished = true;
+        }
 
     }
 
@@ -305,6 +312,8 @@ public class GHControl : MonoBehaviour
             rb.isKinematic = true;
             deadscreen.SetActive(true);
         }
+
+        
     }
 
 

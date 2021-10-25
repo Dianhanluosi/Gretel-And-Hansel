@@ -495,24 +495,34 @@ public class WitchControl : MonoBehaviour
 
     void End()
     {
-        if (Gretel.escaped || Hansel.escaped)
-        {
-            Lose = true;
-            LoseScreen.SetActive(true);
-        }
+       
         if (Gretel.caught && Hansel.caught)
         {
             Win = true;
             WinScreen.SetActive(true);
+            canMove = false;
+        }
+        if (!Win && Gretel.finished && Hansel.finished)
+        {
+            Lose = true;
+            LoseScreen.SetActive(true);
+            canMove = false;
         }
 
-        if (Lose || Win)
+            if (Win && Lose)
         {
-            rend.enabled = false;
-            coll.enabled = false;
-            anim.enabled = false;
-            rb.isKinematic = true;
+            teleCD = 1f;
+            if (teleCD <= 0)
+            {
+                rend.enabled = false;
+                coll.enabled = false;
+                anim.enabled = false;
+                rb.isKinematic = true;
+            }
+            
         }
+
+        
 
     }
 
