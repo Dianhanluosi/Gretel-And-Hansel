@@ -4365,6 +4365,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1498700052}
     m_Modifications:
+    - target: {fileID: 5675978120369682105, guid: f73dd91d9c6eedc4092545ed95386287, type: 3}
+      propertyPath: m_Size.x
+      value: 2.6461196
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675978120369682105, guid: f73dd91d9c6eedc4092545ed95386287, type: 3}
+      propertyPath: m_Size.y
+      value: 2.2140033
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675978120369682105, guid: f73dd91d9c6eedc4092545ed95386287, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.07473636
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675978120369682105, guid: f73dd91d9c6eedc4092545ed95386287, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.025293231
+      objectReference: {fileID: 0}
     - target: {fileID: 5675978120369682106, guid: f73dd91d9c6eedc4092545ed95386287, type: 3}
       propertyPath: m_Name
       value: TriggerButton Variant
@@ -17247,6 +17263,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1498700052}
     m_Modifications:
+    - target: {fileID: 2057428652216521625, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: m_Size.x
+      value: 2.7936935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057428652216521625, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: m_Size.y
+      value: 2.249586
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057428652216521625, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0038306713
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057428652216521625, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2870693
+      objectReference: {fileID: 0}
     - target: {fileID: 2057428652216521626, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
       propertyPath: m_Name
       value: TriggerText
