@@ -13,6 +13,8 @@ public class Fire : MonoBehaviour
 
     public bool canburn;
 
+    public GameObject A;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,17 @@ public class Fire : MonoBehaviour
             burn = true;
             witch.hanselBurned = true;
         }
+
+
+        if (!witch.isntCarrying && canburn)
+        {
+            A.SetActive(true);
+        }
+        else
+        {
+            A.SetActive(false);
+        }
+
 
         anim.SetBool("Burned", burn);
 

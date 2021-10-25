@@ -16,11 +16,15 @@ public class TeleCam : MonoBehaviour
 
     Animator anim;
 
+
+    public GameObject A;
+
+
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
-        thisX = gameObject.GetComponent<Transform>().position.x;
+        thisX = gameObject.GetComponent<Transform>().position.x - 0.5f ;
     }
 
     // Update is called once per frame
@@ -34,6 +38,7 @@ public class TeleCam : MonoBehaviour
         if (CamOn)
         {
             Cam.SetActive(true);
+            A.SetActive(false);
         }
         else
         {
@@ -41,5 +46,20 @@ public class TeleCam : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Witch"))
+        {
+            A.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Witch"))
+        {
+            A.SetActive(false);
+        }
+    }
+
 }

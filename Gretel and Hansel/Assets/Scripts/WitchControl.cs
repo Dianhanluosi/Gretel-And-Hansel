@@ -104,6 +104,9 @@ public class WitchControl : MonoBehaviour
     public Fire oven;
 
 
+    public GameObject AUI;
+
+
     private void Awake()
     {
         H = "Horizontal" + playerNum;
@@ -480,6 +483,7 @@ public class WitchControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Door"))
         {
+            AUI.SetActive(true);
 
             canUseDoor = true;
 
@@ -491,6 +495,9 @@ public class WitchControl : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Stairs"))
         {
+
+            AUI.SetActive(true);
+
 
             canUseDoor = true;
 
@@ -530,6 +537,8 @@ public class WitchControl : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Door") || collision.gameObject.CompareTag("Stairs"))
         {
+            AUI.SetActive(false);
+
             canUseDoor = false;
             doorTeleporting = false;
             canMove = true;

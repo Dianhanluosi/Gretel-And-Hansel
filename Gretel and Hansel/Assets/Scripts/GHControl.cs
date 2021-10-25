@@ -77,6 +77,13 @@ public class GHControl : MonoBehaviour
     public Collider2D coll;
 
 
+    //buttonUI
+    public GameObject AUI;
+
+    //WitchUI
+
+    public GameObject RTUI;
+
     private void Awake()
     {
         H = "Horizontal" + playerNum ;
@@ -260,6 +267,7 @@ public class GHControl : MonoBehaviour
             anim.enabled = false;
             rb.isKinematic = true;
             capturescreen.SetActive(true);
+            RTUI.SetActive(false);
         }
 
         
@@ -282,8 +290,11 @@ public class GHControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
        if (collision.gameObject.CompareTag("Door"))
-        { 
-        
+        {
+
+            AUI.SetActive(true);
+
+
             canUseDoor = true;
 
            
@@ -295,6 +306,9 @@ public class GHControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Stairs"))
         {
 
+            AUI.SetActive(true);
+
+
             canUseDoor = true;
 
 
@@ -305,6 +319,7 @@ public class GHControl : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Catcher"))
         {
+            RTUI.SetActive(true);
             canBeCaught = true;
         }
 
@@ -320,10 +335,13 @@ public class GHControl : MonoBehaviour
             canUseDoor = false;
             doorTeleporting = false;
             canMove = true;
+            AUI.SetActive(false) ;
+
         }
 
         if (collision.gameObject.CompareTag("Catcher"))
         {
+            RTUI.SetActive(false); ;
             canBeCaught = false; ;
         }
     }
