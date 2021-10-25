@@ -1,46 +1,43 @@
 fileFormatVersion: 2
-guid: 60713a642719d2d4cad1ab27d283382b
+guid: 9ee35c584c164d340b0f9538f2385f54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7986931813288863872
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_0
+      213: 7380281223991020531
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_0
   - first:
-      213: 5620161228601259905
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_1
+      213: -7988848203317138347
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_1
   - first:
-      213: 2001831099190205151
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_2
+      213: 5519525548651032404
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_2
   - first:
-      213: -1489703278750013390
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_3
+      213: 6474798136569417958
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_3
   - first:
-      213: -1381523478281732100
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_4
+      213: -4035955075974926354
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_4
   - first:
-      213: -3076124427678637532
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_5
+      213: 7837415302032795263
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_5
   - first:
-      213: 5888600497424835602
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_6
+      213: -5563411321607575356
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_6
   - first:
-      213: -4097202378899445708
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_7
+      213: -2185350427294730211
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_7
   - first:
-      213: -2576470295871850728
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_8
+      213: -3405468889139525644
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_8
   - first:
-      213: 6584374544584303772
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_9
+      213: -7002435859497317449
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_9
   - first:
-      213: -4254216554052238428
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_10
+      213: -6980685777748888807
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_10
   - first:
-      213: -8497667844433854557
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_11
-  - first:
-      213: 8442865456433389912
-    second: gretel-IdleWalkSpriteshee(handsstickingout)t_12
+      213: -6658267361245821185
+    second: hansel-IdleWalkspritesheet(handstickingout)-export_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_0
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 6
+        x: 14
+        y: 133
         width: 22
-        height: 50
+        height: 42
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08796a715d7b82190800000000000000
-      internalID: -7986931813288863872
+      spriteID: 3fb487abba60c6660800000000000000
+      internalID: 7380281223991020531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_1
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 6
+        x: 78
+        y: 133
         width: 22
-        height: 49
+        height: 41
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,41 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 187733b4cd2defd40800000000000000
-      internalID: 5620161228601259905
+      spriteID: 55ca3c4c2e8e12190800000000000000
+      internalID: -7988848203317138347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_2
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 6
-        width: 23
-        height: 49
-      alignment: 9
-      pivot: {x: 0.48104858, y: 0.4436621}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdadf8f47cee7cb10800000000000000
-      internalID: 2001831099190205151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_3
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 6
+        x: 142
+        y: 133
         width: 22
-        height: 49
+        height: 41
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 238ee51c2c2835be0800000000000000
-      internalID: -1489703278750013390
+      spriteID: 45fa9082e3b499c40800000000000000
+      internalID: 5519525548651032404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_4
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_3
       rect:
         serializedVersion: 2
-        x: 273
-        y: 6
-        width: 23
-        height: 50
+        x: 206
+        y: 133
+        width: 22
+        height: 41
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,176 +216,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cffb72457b7d3dce0800000000000000
-      internalID: -1381523478281732100
+      spriteID: 6e0d49aa99a1bd950800000000000000
+      internalID: 6474798136569417958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_5
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_4
       rect:
         serializedVersion: 2
-        x: 337
-        y: 6
-        width: 23
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 422205b81296f45d0800000000000000
-      internalID: -3076124427678637532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_6
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 6
+        x: 14
+        y: 69
         width: 22
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 214223904f288b150800000000000000
-      internalID: 5888600497424835602
+      spriteID: eef6417ed386df7c0800000000000000
+      internalID: -4035955075974926354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_7
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_5
       rect:
         serializedVersion: 2
-        x: 465
-        y: 6
+        x: 77
+        y: 69
         width: 23
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43820d0f420d327c0800000000000000
-      internalID: -4097202378899445708
+      spriteID: f7620ea51b714cc60800000000000000
+      internalID: 7837415302032795263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_8
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_6
       rect:
         serializedVersion: 2
-        x: 529
-        y: 6
+        x: 142
+        y: 69
+        width: 22
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8a13411eacac2b0800000000000000
+      internalID: -5563411321607575356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 69
+        width: 22
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1879576d531ca1e0800000000000000
+      internalID: -2185350427294730211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
         width: 23
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8177638aae98e3cd0800000000000000
-      internalID: -2576470295871850728
+      spriteID: 4f7c13996185db0d0800000000000000
+      internalID: -3405468889139525644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_9
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_9
       rect:
         serializedVersion: 2
-        x: 593
-        y: 6
-        width: 25
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c94621643c5606b50800000000000000
-      internalID: 6584374544584303772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_10
-      rect:
-        serializedVersion: 2
-        x: 657
-        y: 6
-        width: 24
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a3412a759cf5f4c0800000000000000
-      internalID: -4254216554052238428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_11
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 6
+        x: 78
+        y: 5
         width: 22
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3afb2493e18321a80800000000000000
-      internalID: -8497667844433854557
+      spriteID: 7bb8430bfa952de90800000000000000
+      internalID: -7002435859497317449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gretel-IdleWalkSpriteshee(handsstickingout)t_12
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_10
       rect:
         serializedVersion: 2
-        x: 785
-        y: 6
+        x: 142
+        y: 5
         width: 22
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 851e02186651b2570800000000000000
-      internalID: 8442865456433389912
+      spriteID: 913f7a8354f9f1f90800000000000000
+      internalID: -6980685777748888807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hansel-IdleWalkspritesheet(handstickingout)-export_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5
+        width: 23
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff68d59ac151993a0800000000000000
+      internalID: -6658267361245821185
       vertices: []
       indices: 
       edges: []

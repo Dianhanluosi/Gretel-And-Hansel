@@ -64,6 +64,19 @@ public class GHControl : MonoBehaviour
     public GameObject vCam;
 
 
+    //being caught
+    public bool caught = false;
+    public bool canBeCaught = false;
+    public GameObject capturescreen;
+
+
+    public bool dead = false;
+    public GameObject deadscreen;
+
+    public Renderer rend;
+    public Collider2D coll;
+
+
     private void Awake()
     {
         H = "Horizontal" + playerNum ;
@@ -74,6 +87,10 @@ public class GHControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
+
+        rend = GetComponent<Renderer>();
+
+        coll = GetComponent<Collider2D>();
     }
 
 
@@ -87,20 +104,24 @@ public class GHControl : MonoBehaviour
     void Update()
     {
 
-
-        InputIndicator();
-
-        Flip();
-
-        if (canMove)
+        if (canControl)
         {
-            Movement();
+            InputIndicator();
+
+            Flip();
+
+            if (canMove)
+            {
+                Movement();
+            }
+
+            AnimControl();
+
+            teleCD -= Time.deltaTime;
+            Teleporter();
         }
 
-        AnimControl();
-
-        teleCD -= Time.deltaTime;
-        Teleporter();
+        captured();
         
     }
 
@@ -228,6 +249,36 @@ public class GHControl : MonoBehaviour
     }
 
 
+    void captured()
+    {
+        if (caught)
+        {
+            canMove = false;
+            canControl = false;
+            rend.enabled = false;
+            coll.enabled = false;
+            anim.enabled = false;
+            rb.isKinematic = true;
+            capturescreen.SetActive(true);
+        }
+
+        
+        if (dead)
+        {
+            canMove = false;
+            canControl = false;
+            rend.enabled = false;
+            coll.enabled = false;
+            anim.enabled = false;
+            rb.isKinematic = true;
+            deadscreen.SetActive(true);
+        }
+        
+
+    }
+
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
        if (collision.gameObject.CompareTag("Door"))
@@ -252,7 +303,10 @@ public class GHControl : MonoBehaviour
 
         }
 
-
+        if (collision.gameObject.CompareTag("Catcher"))
+        {
+            canBeCaught = true;
+        }
 
     }
 
@@ -266,6 +320,11 @@ public class GHControl : MonoBehaviour
             canUseDoor = false;
             doorTeleporting = false;
             canMove = true;
+        }
+
+        if (collision.gameObject.CompareTag("Catcher"))
+        {
+            canBeCaught = false; ;
         }
     }
 

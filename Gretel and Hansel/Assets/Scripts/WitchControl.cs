@@ -84,6 +84,26 @@ public class WitchControl : MonoBehaviour
     public GameObject Cam;
 
 
+    //attack
+    public bool isntCarryingGretel = true;
+    public bool isntCarryingHansel = true;
+    public bool isntCarrying = true;
+    public bool hitting = false;
+    public bool attacking = false;
+    public bool canCatch = false;
+
+    public bool gretelBurned = false;
+    public bool hanselBurned = false;
+
+    public GHControl Gretel;
+    public GHControl Hansel;
+    public GameObject Ge;
+    public GameObject Ha;
+
+    //oven
+    public Fire oven;
+
+
     private void Awake()
     {
         H = "Horizontal" + playerNum;
@@ -112,23 +132,23 @@ public class WitchControl : MonoBehaviour
     {
 
 
-       /* if (RBButton)
-        {
-            camnum += 1;
-        }
-        if (LBButton)
-        {
-            camnum -= 1;
-        }
-        if (camnum > camMax)
-        {
-            camnum = 0;
-        }
-        if (camnum < 0)
-        {
-            camnum = camMax;
-        }
-        print(camnum);*/
+        /* if (RBButton)
+         {
+             camnum += 1;
+         }
+         if (LBButton)
+         {
+             camnum -= 1;
+         }
+         if (camnum > camMax)
+         {
+             camnum = 0;
+         }
+         if (camnum < 0)
+         {
+             camnum = camMax;
+         }
+         print(camnum);*/
 
 
 
@@ -145,6 +165,9 @@ public class WitchControl : MonoBehaviour
 
         teleCD -= Time.deltaTime;
         Teleporter();
+
+        snatching();
+
 
     }
 
@@ -392,6 +415,66 @@ public class WitchControl : MonoBehaviour
 
     }
 
+    void snatching()
+    {
+        anim.SetBool("Meleee", hitting);
+
+
+        if (!isntCarryingGretel || !isntCarryingHansel)
+        {
+            isntCarrying = false;
+        }
+        else
+        {
+            isntCarrying = true;
+        }
+
+
+        if (isntCarrying && canMove && Input.GetAxis(RT)!= 0)
+        {
+            hitting = true;
+        }
+        else
+        {
+            hitting = false;
+        }
+
+
+        if (Gretel.canBeCaught && attacking)
+        {
+            Gretel.caught = true;
+        }
+        if (Gretel.caught)
+        {
+            isntCarryingGretel = false;
+        }
+
+        if (Hansel.canBeCaught && attacking)
+        {
+            Hansel.caught = true;
+        }
+        if (Hansel.caught)
+        {
+            isntCarryingHansel = false;
+        }
+
+        if (gretelBurned)
+        {
+            isntCarryingGretel = true;
+        }
+        if (hanselBurned)
+        {
+            isntCarryingHansel = true;
+        }
+
+        anim.SetBool("Gretel", !isntCarryingGretel);
+        anim.SetBool("Hansel", !isntCarryingHansel);
+        
+
+    }
+
+  
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -426,6 +509,17 @@ public class WitchControl : MonoBehaviour
         }
 
 
+        if (collision.gameObject.CompareTag("Fire"))
+        {
+            if (!isntCarrying)
+            {
+
+
+                collision.gameObject.GetComponent<Fire>().canburn = true;
+            }
+
+        }
+
 
     }
 
@@ -446,6 +540,13 @@ public class WitchControl : MonoBehaviour
             canUseTeleporter = false;
 
         }
+
+        if (collision.gameObject.CompareTag("Fire"))
+        {
+           collision.gameObject.GetComponent<Fire>().canburn = false;
+        }
+
+
     }
 
 }

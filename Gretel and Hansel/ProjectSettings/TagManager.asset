@@ -10,6 +10,8 @@ TagManager:
   - Door
   - Stairs
   - Tele
+  - Catcher
+  - Fire
   layers:
   - Default
   - TransparentFX

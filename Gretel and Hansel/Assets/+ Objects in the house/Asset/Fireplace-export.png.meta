@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 937407fa12fdbc544a33f74f59841469
+guid: 20f8bf7721d3b1641bbe562298d81c8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4109412795537874883
-    second: Fireplace_0
+      213: 5991192195326154733
+    second: Fireplace-export_0
   - first:
-      213: -1349743448530748606
-    second: Fireplace_1
+      213: -2842045369362039894
+    second: Fireplace-export_1
   - first:
-      213: -8549371111265558562
-    second: Fireplace_2
+      213: -3549625076102788686
+    second: Fireplace-export_2
   - first:
-      213: -5820212473665762020
-    second: Fireplace_3
+      213: 4130947313863945861
+    second: Fireplace-export_3
   - first:
-      213: 1535553478911796009
-    second: Fireplace_4
+      213: 1947752288015062275
+    second: Fireplace-export_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fireplace_0
+      name: Fireplace-export_0
       rect:
         serializedVersion: 2
         x: 0
@@ -126,20 +126,20 @@ TextureImporter:
         width: 39
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d302586c5de68f6c0800000000000000
-      internalID: -4109412795537874883
+      spriteID: de712871f8df42350800000000000000
+      internalID: 5991192195326154733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fireplace_1
+      name: Fireplace-export_1
       rect:
         serializedVersion: 2
         x: 45
@@ -147,20 +147,20 @@ TextureImporter:
         width: 39
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24bf96c1c7fb44de0800000000000000
-      internalID: -1349743448530748606
+      spriteID: aabb1ab5bc60f88d0800000000000000
+      internalID: -2842045369362039894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fireplace_2
+      name: Fireplace-export_2
       rect:
         serializedVersion: 2
         x: 90
@@ -168,20 +168,20 @@ TextureImporter:
         width: 39
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edf970455488a5980800000000000000
-      internalID: -8549371111265558562
+      spriteID: 2b9031dccc23dbec0800000000000000
+      internalID: -3549625076102788686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fireplace_3
+      name: Fireplace-export_3
       rect:
         serializedVersion: 2
         x: 135
@@ -189,35 +189,35 @@ TextureImporter:
         width: 39
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1dcadd87937a3fa0800000000000000
-      internalID: -5820212473665762020
+      spriteID: 58ee6bcf1b2145930800000000000000
+      internalID: 4130947313863945861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fireplace_4
+      name: Fireplace-export_4
       rect:
         serializedVersion: 2
-        x: 180
+        x: 179
         y: 0
-        width: 39
+        width: 40
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923272cd0c16f4510800000000000000
-      internalID: 1535553478911796009
+      spriteID: 3059795e26ec70b10800000000000000
+      internalID: 1947752288015062275
       vertices: []
       indices: 
       edges: []
