@@ -24414,6 +24414,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1310013729}
+    - target: {fileID: 1388641645, guid: 46091e370bc08c9489cc90640b676a58, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0008
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388641645, guid: 46091e370bc08c9489cc90640b676a58, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0008
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388641646, guid: 46091e370bc08c9489cc90640b676a58, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 991722060922773828, guid: e9c0d6a508944db4c8206bf9e8e785d4, type: 3}
     - target: {fileID: 7970397981462232307, guid: 46091e370bc08c9489cc90640b676a58, type: 3}
       propertyPath: witch
       value: 
