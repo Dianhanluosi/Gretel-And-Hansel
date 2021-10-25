@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &270835636
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 270835635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.00078126247, y: 0.00062495, z: 1}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 1}
   m_Children: []
   m_Father: {fileID: 5675978121220052624}
   m_RootOrder: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 991722060922773828, guid: e9c0d6a508944db4c8206bf9e8e785d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -92,7 +92,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342135209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 342135208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0007812624, y: 0.00062495004, z: 1}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 1}
   m_Children: []
   m_Father: {fileID: 5675978119937071619}
   m_RootOrder: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 991722060922773828, guid: e9c0d6a508944db4c8206bf9e8e785d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -167,7 +167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1782542047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ RectTransform:
   m_GameObject: {fileID: 1782542046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0007812624, y: 0.00062495016, z: 1}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 1}
   m_Children: []
   m_Father: {fileID: 5675978121677050061}
   m_RootOrder: 1
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 991722060922773828, guid: e9c0d6a508944db4c8206bf9e8e785d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: AUIW
       value: 
       objectReference: {fileID: 1782542046}
+    - target: {fileID: 2057428652216521624, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: includeWitch
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2057428652216521625, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
       propertyPath: m_Size.x
       value: 0.35419178
@@ -262,11 +266,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2057428652216521626, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
       propertyPath: m_Name
-      value: TriggerButton
+      value: TriggerButton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2057428652216521627, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057428652216521627, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5259375
       objectReference: {fileID: 0}
     - target: {fileID: 2057428652216521627, guid: 15d2b750a574a424cb2cb114f16fa106, type: 3}
       propertyPath: m_LocalPosition.x

@@ -70,6 +70,7 @@ public class WitchControl : MonoBehaviour
     //teleportation / venting
     public bool canUseTeleporter = false;
     public TeleManage teleArray;
+    public int oriCamNum;
     public int camnum = 0;
     public int curretnCamNum = 0;
     public int camMax;
@@ -424,6 +425,7 @@ public class WitchControl : MonoBehaviour
         
         if (teleCamOn && BButton)
         {
+            camnum = curretnCamNum;
             teleCamOn = false;
             canMove = true;
         }

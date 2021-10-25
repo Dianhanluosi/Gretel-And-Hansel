@@ -19,6 +19,7 @@ public class TeleCam : MonoBehaviour
 
     public GameObject A;
 
+    public GameObject CamA;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,7 @@ public class TeleCam : MonoBehaviour
         if (collision.gameObject.CompareTag("Witch"))
         {
             A.SetActive(true);
+            CamA.SetActive(false);
         }
     }
 
@@ -59,6 +61,7 @@ public class TeleCam : MonoBehaviour
         if (collision.gameObject.CompareTag("Witch"))
         {
             A.SetActive(false);
+            CamA.SetActive(true);
         }
     }
 
