@@ -108,6 +108,7 @@ public class WitchControl : MonoBehaviour
 
     public Renderer rend;
     public Collider2D coll;
+    public Collider2D catcher;
 
 
     public GameObject AUI;
@@ -117,6 +118,9 @@ public class WitchControl : MonoBehaviour
     public bool Lose;
     public GameObject LoseScreen;
     public GameObject WinScreen;
+
+    public float SCD = 15f;
+
 
     private void Awake()
     {
@@ -142,12 +146,26 @@ public class WitchControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        rb.isKinematic = true;
+        anim.enabled = false;
+        rend.enabled = false;
+        coll.enabled = false;
+        catcher.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        print(SCD);
+        SCD -= Time.deltaTime;
+        if (SCD <= 0)
+        {
+            rb.isKinematic = false;
+            anim.enabled = true;
+            rend.enabled = true;
+            coll.enabled = true;
+            catcher.enabled = true;
+        }
 
 
         /* if (RBButton)
